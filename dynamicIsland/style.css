@@ -1,0 +1,31 @@
+body{
+    background-color: darkgray;
+}
+@keyframes in{
+    from{width: 10vw; height: 3vw; border-radius: 25px;}
+    to{width: 20vw; height: 7vw; border-radius: 40px;}
+}
+@keyframes out {
+    from{width: 20vw; height: 7vw; border-radius: 40px;}
+    to{width: 10vw; height: 3vw; border-radius: 25px;}
+}
+.island{
+    animation: out 1s ;
+    width: 10vw;
+    height: 3vw;
+    border-color: black;
+    border-radius: 25px;
+    background-color: black;
+    border-style: none;
+
+}
+.islandDiv{
+    text-align: center;
+    
+}
+.island:hover{
+    animation: in 1s ;
+    width: 20vw; 
+    height: 7vw;
+    border-radius: 40px;
+}
